@@ -88,8 +88,6 @@ return [
             'prefix' => '',
             'schema' => 'public',
         ],
-
-
     ],
 
     /*
@@ -128,8 +126,4 @@ return [
         ],
 
     ],
-
-
-
-
 ];
