@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
@@ -22,6 +23,18 @@ class HomeController extends Controller
     {
         $user = Auth::user();
         $questions = $user->questions()->paginate(6);
-        return view('home')->with('questions', $questions);
+
+
+        $archives = User::select('email as email' )
+            ->orderByDesc('created_at')->limit(10)->get();
+
+
+
+
+
+
+
+//       return view('home')->with('questions', $questions, 'archives',$archives);
+        return view('home', compact('questions','archives'));
     }
 }

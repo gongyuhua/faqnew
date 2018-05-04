@@ -54,4 +54,17 @@
                 </div>
             </div>
         </div>
+
+            <div class="sidebar-module">
+                <h4>Recent Added Users</h4>
+                <ol class="list-unstyled">
+                    @foreach($archives as $archives)
+                        <li>
+                            <a href="#">{{$archives['email']}}</a>
+
+                        </li>
+                    @endforeach
+                </ol>
+            </div>
+
 @endsection
