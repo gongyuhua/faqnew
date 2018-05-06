@@ -66,8 +66,9 @@
                         <a href="#">{{$archives['email1']}}</a>
 
                     </li>
-                    @endforeach
-                </ol>
-            </div>
+                @endforeach
+            </ol>
+        </div>
+
 
 @endsection

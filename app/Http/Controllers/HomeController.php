@@ -21,6 +21,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        
         $user = Auth::user();
         $questions = $user->questions()->paginate(6);
 
