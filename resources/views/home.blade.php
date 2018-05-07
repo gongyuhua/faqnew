@@ -29,7 +29,8 @@
                                             <div class="card-footer">
                                                 <p class="card-text">
 
-                                                    <a class="btn btn-primary float-right" href="{{ route('questions.show', ['id' => $question->id]) }}">
+                                                    <a class="btn btn-primary float-right"
+                                                       href="{{ route('questions.show', ['id' => $question->id]) }}">
                                                         View
                                                     </a>
                                                 </p>
@@ -54,7 +55,7 @@
                 </div>
             </div>
         </div>
-    <br>
+        <br>
         <br>
         <br>
 
@@ -69,6 +70,7 @@
                 @endforeach
             </ol>
         </div>
+
 
 
 @endsection
