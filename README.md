@@ -9,10 +9,13 @@ To run the FAQ project:
 
 4.setup database / with sqlite (https://laravel.com/docs/5.6/database)
 
+Epic:
+Recent Added Users
+
 User Story
 
 1. A user can register and login his own account.
 2. A user can create and edit his profile.
-3. A user can create, view,edit and delete questions.
-4. A user can create, view,edit and delete answers.
+3. A user can create, view, edit and delete questions.
+4. A user can create, view, edit and delete answers.
 5. Recent added users will be available when new user register his account.

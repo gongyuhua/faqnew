@@ -27,6 +27,7 @@ class HomeController extends Controller
 
 
         $archives = User::select('email as email1' )
+
             ->orderByDesc('created_at')->limit(10)->get();
 
 //       return view('home')->with('questions', $questions, 'archives',$archives);
