@@ -45,4 +45,12 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Answer');
     }
+    public static function archives()
+    {
+        return static::select('email as email1')
+            ->orderByDesc('created_at')
+            ->limit(10)
+            ->get();
+    }
+
 }

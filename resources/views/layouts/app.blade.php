@@ -24,7 +24,7 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-
+            </div>
 
             @guest
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -95,6 +95,8 @@
             @include('flash.status')
         </div>
         @yield('content')
+        @include('sidebar')
+
     </main>
 </div>
 </body>

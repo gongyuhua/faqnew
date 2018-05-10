@@ -14,6 +14,7 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
+
     /**
      * Show the application dashboard.
      *
@@ -21,16 +22,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+
         $user = Auth::user();
+
         $questions = $user->questions()->paginate(6);
 
 
-        $archives = User::select('email as email1' )
-
-            ->orderByDesc('created_at')->limit(10)->get();
-
 //       return view('home')->with('questions', $questions, 'archives',$archives);
-        return view('home', compact('questions','archives'));
+        return view('home', compact('questions'));
     }
 }

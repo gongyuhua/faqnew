@@ -9,7 +9,7 @@
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
                             Create a Question
                         </a>
-
+                        
                         <div class="card-body">
 
                             <div class="card-deck">
@@ -26,6 +26,7 @@
                                             <div class="card-body">
                                                 <p class="card-text">{{$question->body}}</p>
                                             </div>
+
                                             <div class="card-footer">
                                                 <p class="card-text">
 
@@ -59,17 +60,7 @@
         <br>
         <br>
 
-        <div class="sidebar-module">
-            <h4>Recent Added Users</h4>
-            <ol class="list-unstyled">
-                @foreach($archives as $archives)
-                    <li>
-                        <a href="#">{{$archives['email1']}}</a>
 
-                    </li>
-                @endforeach
-            </ol>
-        </div>
 
 
 
